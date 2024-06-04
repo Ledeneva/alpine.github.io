@@ -1,6 +1,35 @@
-body {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.header {
+    padding: 5px 0;
+    max-width: 1170px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-item {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #353540;
+}
+
+.header__login {
+    background: #EE4F3C;
+    border-radius: 10px;
+    padding: 23px 80px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    border: none;
 }

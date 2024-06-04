@@ -1,0 +1,42 @@
+.footer {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 128px;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+
+}
+
+.contacts {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #ee4f3c;
+}
+
+.address {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.02em;
+    color: #5d5d61;
+}
+
+.footer-menu-item {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #353540;
+    margin: 0 auto;
+    margin-bottom: 26px;
+}

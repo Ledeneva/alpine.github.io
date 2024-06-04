@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/Global.css">
     <link rel="stylesheet" href="./Styles/Header.css">
     <link rel="stylesheet" href="./Styles/Main.css">
     <link rel="stylesheet" href="./Styles/Footer.css">
-    <link rel="stylesheet" href="./Styles/Global.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
@@ -26,17 +27,15 @@
     <main>
         <section class="hero">
             <div class="hero-wrapper">
-                <h1>Компания ООО «Альпайн Стайл» является эксклюзивным дистрибьютером зарубежных брендов на территории РФ и СНГ.</h1>
+                <h1 class="hero-text">Компания Альпайн Стайл является<br/>эксклюзивным дистрибьютером зарубежных<br/> брендов на территории РФ и СНГ.</h1>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us section">
             <h2 class="section-name">О нас</h2>
-            <p class="about-us__p">Компания ООО « Альпайн Стайл» является
-                эксклюзивным дистрибьютером зарубежных брендов на территории РФи СНГ.</p>
             <p class="about-us__p">Мы на протяжении нескольких лет сотрудничаем с мировыми и престижными брендами, которые известны своим безупречным качеством и эксклюзивным дизайном</p>
             <p class="about-us__p">Каждый из этих брендов отличается высочайшим качеством, уникальным дизайном и оригинальным стилем. Коллекции брендов включают в себя одежду от 2 до 16 лет.</p>
         </section>
-        <section class="pinbina">
+        <section class="pinbina section">
             <img src="./pic/p-left.png" alt="" class="pinbina__left-side">
             <div class="pinbina__right-side">
                 <p class="right-side__text">Бренд Pinbina, рожденный в Швейцарии, окружен природой, горами, озерами,
@@ -54,7 +53,7 @@
                     для наших детей и нашей планеты.</p>
             </div>
         </section>
-        <section class="clients">
+        <section class="clients section">
             <h2 class="section-name">Клиенты</h2>
             <p>Среди наших партнеров можно отметить крупных ритейлеров, самые популярные универмаги страны и ведущие интернет-магазины. В то же время мы тесно сотрудничаем с небольшими местными магазинами. Мы верим, что успех каждого из наших партнеров – это наш собственный успех. Мы предпринимаем все необходимые усилия для того, чтобы наши партнеры добивались коммерческого успеха и процветания.</p>
             <div class="clients__logo">
@@ -67,32 +66,36 @@
                 <img src="./pic/clients/sport-marafon.png" alt="Спорт марафон" class="client">
                 <img src="./pic/clients/lamod.png" alt="Ламода" class="client">
             </div>
+            <div id="map" style="width: 1170px; height: 400px"></div>
         </section>
-        <section class="offer">
-            <h2 class="section-name">Мы предлагаем</h2>
-            <div class="offer-item">
-                <p class="offer-item-name">Ассортимент</p>
-                <p class="offer-item-text">Он составляется индивидуально для каждого партнера с учетом факторов, непосредственно влияющих на спрос и, как следствие, повышающих успех продаж.</p>
+        <section class="offer section">
+            <h2 class="section-name offer-name">Мы предлагаем</h2>
+            <div class="offer-items">
+                <div class="offer-item">
+                    <p class="offer-item-name">Ассортимент</p>
+                    <p class="offer-item-text">Он составляется индивидуально для каждого партнера с учетом факторов, непосредственно влияющих на спрос и, как следствие, повышающих успех продаж.</p>
+                </div>
+                <div class="offer-item">
+                    <p class="offer-item-name">Обучение</p>
+                    <p class="offer-item-text">Наши бренд-менеджеры регулярно проводят мастер-классы и тренинги для сотрудников наших партнеров по брендам и новым коллекциям.</p>
+                </div>
+                <div class="offer-item">
+                    <p class="offer-item-name">Свободный склад</p>
+                    <p class="offer-item-text">Мы держим свободный склад для наших партнеров и оперативно поставляем товар, чтобы быть уверенным, что товар всегда есть в наличии, когда это необходимо в торговой точке.</p>
+                </div>
+                <div class="offer-item">
+                    <p class="offer-item-name">Выгодные условия</p>
+                    <p class="offer-item-text">Мы предлагаем привлекательные условия и цены, что делает сотрудничество выгодным для наших партнеров.</p>
+                </div>
             </div>
-            <div class="offer-item">
-                <p class="offer-item-name">ОБУЧЕНИЕ</p>
-                <p class="offer-item-text">Наши бренд-менеджеры регулярно проводят мастер-классы и тренинги для сотрудников наших партнеров по брендам и новым коллекциям.</p>
-            </div>
-            <div class="offer-item">
-                <p class="offer-item-name">СВОБОДНЫЙ СКЛАД</p>
-                <p class="offer-item-text">Мы держим свободный склад для наших партнеров и оперативно поставляем товар, чтобы быть уверенным, что товар всегда есть в наличии, когда это необходимо в торговой точке.</p>
-            </div>
-            <div class="offer-item">
-                <p class="offer-item-name">ВЫГОДНЫЕ УСЛОВИЯ</p>
-                <p class="offer-item-text">Мы предлагаем привлекательные условия и цены, что делает сотрудничество выгодным для наших партнеров.</p>
-            </div>
+            
         </section>
-        <section class="section-form">
+        <section class="section-form section">
             <form action="submit" class="form">
                 <p class="form-name">Стать нашим партнером</p>
-                <input type="text" class="name">
-                <input type="text" class="phone">
-                <input type="text" class="email">
+                <input type="text" class="name" placeholder="Ваше ФИО" >
+                <input type="tel" class="phone" placeholder="Номер телефона" inputmode="tel">
+                <input type="email" class="email" placeholder="Email">
                 <button>Отправить</button>
             </form>
         </section>
@@ -111,11 +114,13 @@
             </div>
         </div>
         <nav class="footer__menu menu">
-            <a href="#" class="menu-item">О нас</a>
-            <a href="#" class="menu-item">Бренды</a>
-            <a href="#" class="menu-item">Клиенты</a>
-            <a href="#" class="menu-item">Контакты</a>
+            <a href="#" class="menu-item footer-menu-item">О нас</a>
+            <a href="#" class="menu-item footer-menu-item">Бренды</a>
+            <a href="#" class="menu-item footer-menu-item">Клиенты</a>
+            <a href="#" class="menu-item footer-menu-item">Контакты</a>
         </nav>
     </footer>
+    <script src="https://api-maps.yandex.ru/v3/?apikey=3d398b1c-0c2c-4ac5-b4dd-6e3a520ff16f&lang=ru_RU"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
