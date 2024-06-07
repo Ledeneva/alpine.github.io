@@ -40,3 +40,22 @@
     margin: 0 auto;
     margin-bottom: 26px;
 }
+
+@media (max-width: 880px) {
+    
+}
+
+@media (max-width: 590px) {
+    
+    .footer {
+        padding: 0 33px;
+    }
+    .footer__top {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .footer__menu {
+        display: none;
+    }
+}

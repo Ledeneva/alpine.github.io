@@ -8,6 +8,13 @@
     align-items: center;
 }
 
+.header-wrapper {
+    flex-grow: 0.6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .menu {
     display: flex;
     gap: 30px;
@@ -32,4 +39,36 @@
     letter-spacing: 0.02em;
     color: #fff;
     border: none;
+}
+.menu-burger {
+    display: none;
+}
+
+@media (max-width: 880px) {
+    .header {
+        padding: 5px 33px;       
+        display: block;
+    }
+    .header__login {
+        padding: 16px 45px;
+    }
+}
+
+@media (max-width: 590px) {
+    .header {
+        display: flex;
+    }
+
+    .header-wrapper {
+        display: none;
+    }
+    .menu-burger-line {
+        width: 60px;
+    }
+    .menu-burger {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
 }
