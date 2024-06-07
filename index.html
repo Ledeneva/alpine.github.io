@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
     <title>Альпайн Стайл</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -108,11 +109,11 @@
             
         </section>
         <section class="section-form section">
-            <form action="submit" class="form">
+            <form action="submit" class="form" id="contact-form">
                 <p class="form-name">Стать нашим партнером</p>
-                <input type="text" class="name" placeholder="Ваше ФИО" >
-                <input type="tel" class="phone" placeholder="Номер телефона" inputmode="tel">
-                <input type="email" class="email" placeholder="Email">
+                <input type="text" class="name" name="user_name" placeholder="Ваше ФИО" >
+                <input type="tel" class="phone" name="message" placeholder="Номер телефона" inputmode="tel">
+                <input type="email" class="email" name="user_email" placeholder="Email">
                 <button>Отправить</button>
             </form>
         </section>

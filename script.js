@@ -1,44 +1,19 @@
-initMap();
 
-const markerElement = document.createElement('div');
-markerElement.className = 'marker-class';
-markerElement.innerText = "I'm marker!";
+emailjs.init({
+  publicKey: "596I7AbPEbmzA5OgD",
+});
 
-const marker = new YMapMarker(
-  {
-    source: 'markerSource',
-    coordinates: [37.588144, 55.733842],
-    draggable: true,
-    mapFollowsOnDrag: true
-  },
-  markerElement
-);
-
-map.addChild(marker);
-
-async function initMap() {
-    // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
-    await ymaps3.ready;
-
-    const {YMap, YMapDefaultSchemeLayer} = ymaps3;
-
-    // Иницилиазируем карту
-    const map = new YMap(
-        // Передаём ссылку на HTMLElement контейнера
-        document.getElementById('map'),
-
-        // Передаём параметры инициализации карты
-        {
-            location: {
-                // Координаты центра карты
-                center: [37.588144, 55.733842],
-
-                // Уровень масштабирования
-                zoom: 10
-            }
-        }
-    );
-
-    // Добавляем слой для отображения схематической карты
-    map.addChild(new YMapDefaultSchemeLayer());
+window.onload = function() {
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // these IDs from the previous steps  
+      emailjs.sendForm('service_x3sx4sk', 'template_6oul8tt', this).then(
+        function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        function (err) {
+          console.log('FAILED...', err);
+        },
+      );
+  });
 }
